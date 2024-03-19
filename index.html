@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Invetory System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="invsys">
+        <h2>Inventory System</h2>
+	<form action="#" id="inputForm">
+		
+		<p>Item: <input type="text" id="item"></p>
+		<p>Quantity: <input type="number" id="quantity"></p>
+		<input type="submit" value="SUBMIT" id="submitButton">
+	</form>
+	<div class="setVisibility">
+		<p>View table <input type="checkbox" id="checkbox"></p>
+	</div>
+	<div class="tablesSection" style="margin-top: 10px; display: none;">
+		<table>
+			<tr>
+				<th>Item</th>
+				<th>Quantity</th>
+			</tr>
+		</table>
+	</div>
+    <input type="button" value="EDIT" id="editbutton">
+	<form id="editForm" style="display: none;">
+		<input placeholder="Item Name" type="text" id="NewItemName"/>
+		<input placeholder="Quantity" type="number" id="NewQty"/>
+        <br>
+		<input type="submit" value="SUBMIT" id="SubmitEdit">
+	</form>
+    </div>
+
+
+
+    <div class="loginreg">
+        <h1 id="title">Login and registration system</h1>
+        <div class="regForm" style="margin-top: 25px">
+            <h2>Register here!</h2>
+            <form action="#" id="registrationForm">
+                <p>Username: <input type="text" id="usernameReg"></p>
+                <p>Password: <input type="password" id="passwordReg"></p>
+                <input type="submit" name="" value="REGISTER" id="register">
+            </form>	
+        </div>
+        <div class="logForm" style="margin-top: 25px; display: none;">
+            <h2>Login here! Time to login now!</h2>
+            <form action="#" id="loginForm">
+                <p>Username: <input type="text" id="username"></p>
+                <p>Password: <input type="password" id="password"></p>
+                <input type="submit" value="LOGIN" id="login">
+            </form>
+        </div>
+        <div class="welcomePanel">
+            <h2 id="greeting"></h2>
+        </div>
+    </div>
+	<script src="app.js"></script>
+</body>
+</html>
