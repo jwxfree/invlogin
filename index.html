@@ -1,64 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Invetory System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<div class="invsys">
-        <h2>Inventory System</h2>
-	<form action="#" id="inputForm">
-		
-		<p>Item: <input type="text" id="item"></p>
-		<p>Quantity: <input type="number" id="quantity"></p>
-		<input type="submit" value="SUBMIT" id="submitButton">
-	</form>
-	<div class="setVisibility">
-		<p>View table <input type="checkbox" id="checkbox"></p>
-	</div>
-	<div class="tablesSection" style="margin-top: 10px; display: none;">
-		<table>
-			<tr>
-				<th>Item</th>
-				<th>Quantity</th>
-			</tr>
-		</table>
-	</div>
-    <input type="button" value="EDIT" id="editbutton">
-	<form id="editForm" style="display: none;">
-		<input placeholder="Item Name" type="text" id="NewItemName"/>
-		<input placeholder="Quantity" type="number" id="NewQty"/>
-        <br>
-		<input type="submit" value="SUBMIT" id="SubmitEdit">
-	</form>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-6 invsys">
+                <h1 style="font-weight: 600;">Inventory System</h1>
+                <form action="#" id="inputForm">
+                    <p>Item: <input type="text" id="item"></p>
+                    <p>Quantity: <input type="number" id="quantity"></p>
+                    <input type="submit" value="SUBMIT" id="submitButton">
+                </form>
+                <div class="setVisibility">
+                    <p>View table <input type="checkbox" id="checkbox"></p>
+                </div>
+                <div class="tablesSection row justify-content-center align-items-center" style="margin-top: 10px; display: none;">
+                    <table>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                        </tr>
+                    </table>
+                </div>
+                <input type="button" value="EDIT" id="editbutton">
+                <form id="editForm" style="display: none;">
+                    <input placeholder="Item Name" type="text" id="NewItemName"/>
+                    <input placeholder="Quantity" type="number" id="NewQty"/>
+                    <br>
+                    <input type="submit" value="SUBMIT" id="SubmitEdit">
+                </form>
+            </div>
+
+            <!-- LOGIN REG -->
+            <div class="col-md-6 loginreg">
+                <h1 id="title">Login and registration system</h1>
+                <div class="regForm" style="margin-top: 25px">
+                    <h2>Register here!</h2>
+                    <form action="#" id="registrationForm">
+                        <p>Username: <input type="text" id="usernameReg"></p>
+                        <p>Password: <input type="password" id="passwordReg"></p>
+                        <input type="submit" name="" value="REGISTER" id="register">
+                    </form>	
+                </div>
+                <div class="logForm" style="margin-top: 25px; display: none;">
+                    <h2>Login here! Time to login now!</h2>
+                    <form action="#" id="loginForm">
+                        <p>Username: <input type="text" id="username"></p>
+                        <p>Password: <input type="password" id="password"></p>
+                        <input type="submit" value="LOGIN" id="login">
+                    </form>
+                </div>
+                <div class="welcomePanel">
+                    <h2 id="greeting"></h2>
+                </div>
+            </div>
+        </div>
     </div>
-
-
-
-    <div class="loginreg">
-        <h1 id="title">Login and registration system</h1>
-        <div class="regForm" style="margin-top: 25px">
-            <h2>Register here!</h2>
-            <form action="#" id="registrationForm">
-                <p>Username: <input type="text" id="usernameReg"></p>
-                <p>Password: <input type="password" id="passwordReg"></p>
-                <input type="submit" name="" value="REGISTER" id="register">
-            </form>	
-        </div>
-        <div class="logForm" style="margin-top: 25px; display: none;">
-            <h2>Login here! Time to login now!</h2>
-            <form action="#" id="loginForm">
-                <p>Username: <input type="text" id="username"></p>
-                <p>Password: <input type="password" id="password"></p>
-                <input type="submit" value="LOGIN" id="login">
-            </form>
-        </div>
-        <div class="welcomePanel">
-            <h2 id="greeting"></h2>
-        </div>
-    </div>
-	<script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
 </html>
